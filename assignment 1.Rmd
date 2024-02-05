@@ -1,0 +1,39 @@
+---
+title: "FML ASSIGNMENT-1"
+author: "ADVAITHA NEERATI"
+date: "2024-02-04"
+output: html_document
+---
+
+
+```{r}
+library(tinytex)
+library(ggplot2)
+getwd()
+setwd("C:/Users/prava/OneDrive/文档/FML")
+prava<-read.csv("FML-WS.csv")
+
+```
+
+
+```{r}
+library(ggplot2)
+setwd("C:/Users/prava/OneDrive/文档/FML")
+prava<-read.csv("FML-WS.csv")
+plot(prava$Biology,prava$Chemistry)
+
+prava
+
+```
+
+
+```{r}
+library(ggplot2)
+setwd("C:/Users/prava/OneDrive/文档/FML")
+prava<-read.csv("FML-WS.csv")
+plot(prava$Biology,prava$Chemistry)
+summary(prava)
+prava
+plot( prava$Biology,prava$Chemistry, main = "Scatter Plot" , xlab = "Biology Marks" , ylab = "Chemistry Marks" , pch = 16, col = "blue")
+
+```
